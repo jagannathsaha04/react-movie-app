@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 
 src\services\api.js
+api.js
