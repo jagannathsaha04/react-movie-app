@@ -25,3 +25,4 @@ dist-ssr
 
 src\services\api.js
 api.js
+api.env
