@@ -1,4 +1,4 @@
-const API_KEY = "e5bb21b9a92ca3bf3b2d43a69c66390e";
+const API_KEY = import.meta.env.VITE_API_KEY; // Read from .env file
 const URL = "https://api.themoviedb.org/3";
 
 export const getPopularMovies = async () => {
@@ -7,8 +7,8 @@ export const getPopularMovies = async () => {
     return data.results;
 };
 
-export const searchMovies = async (query) => { 
-    if (!query) return []; 
+export const searchMovies = async (query) => {
+    if (!query) return [];
     const response = await fetch(`${URL}/search/movie?api_key=${API_KEY}&query=${encodeURIComponent(query)}`);
     const data = await response.json();
     return data.results;

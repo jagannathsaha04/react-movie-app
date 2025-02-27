@@ -24,5 +24,4 @@ dist-ssr
 *.sw?
 
 src\services\api.js
-api.js
-api.env
+.env
